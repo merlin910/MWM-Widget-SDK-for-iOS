@@ -43,24 +43,24 @@ static NSString *kWidgetTypeID = @"w_20000001";
     
     if (widgetTypeID.length == 0 || layoutType.length == 0) {
         // an existing widget restored
-        NSLog(@"an existing widget restored:%d", syncID);
+        ALog(@"an existing widget restored:%d", syncID);
         widgetTypeID = [[widgetData objectForKey:[NSString stringWithFormat:@"%d", syncID]] objectAtIndex:0];
         layoutType = [[widgetData objectForKey:[NSString stringWithFormat:@"%d", syncID]] objectAtIndex:1];
         if (widgetTypeID.length == 0 || layoutType.length == 0) {
             // unknown widget, ask user to remove it from MWM and add again.
-            NSLog(@"nothing here");
+            ALog(@"nothing here");
             return;
         }
     } else if ([kWidgetTypeID isEqualToString:widgetTypeID]) {
         // a new widget is created, save new widget info
-        NSLog(@"a new widget is created, save new widget info");
+        ALog(@"a new widget is created, save new widget info");
         [widgetData setObject:@[widgetTypeID, layoutType] forKey:[NSString stringWithFormat:@"%d", syncID]];
         [self saveDataToDisk];
     } else {
         return;
     }
     
-    //NSLog(@"%@", [widgetData description]);
+    //ALog(@"%@", [widgetData description]);
     
     widgetShouldSendData = YES;
     
@@ -123,7 +123,7 @@ static NSString *kWidgetTypeID = @"w_20000001";
 
 - (void) mwmAppMgrRemovedSyncID:(NSUInteger)syncID {
     [widgetData removeObjectForKey:[NSString stringWithFormat:@"%d", syncID]];
-    //NSLog(@"%@", [widgetData description]);
+    //ALog(@"%@", [widgetData description]);
     [self saveDataToDisk];
 }
 
@@ -141,7 +141,7 @@ static NSString *kWidgetTypeID = @"w_20000001";
         if (timeStamp - updatedTimestamp >= kUPDATE_INTERVAL_SECONDS) {
             [self sendBitmapDataWithSyncID:nil];
         }
-        NSLog(@"Widget receive heartbeat");
+        ALog(@"Widget receive heartbeat");
     }
 }
 
@@ -260,7 +260,7 @@ static NSString *kWidgetTypeID = @"w_20000001";
     [widgetDataDict setObject:[NSNumber numberWithBool:YES] forKey:@"singleton"];
     #endif
     
-    //NSLog(@"%@", [widgetDataDict description]);
+    //ALog(@"%@", [widgetDataDict description]);
     
     [[MWMAppManager sharedAppManager] registerNewWidgetType:widgetDataDict withView:self.view];
     return;

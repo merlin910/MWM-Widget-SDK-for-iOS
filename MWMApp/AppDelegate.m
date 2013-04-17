@@ -14,7 +14,7 @@
 @implementation AppDelegate
 
 - (BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    NSLog(@"open url");
+    ALog(@"open url");
     [[MWMAppManager sharedAppManager] handleURL:url fromAPP:sourceApplication withAnnotation:annotation];
     return YES;
 }
