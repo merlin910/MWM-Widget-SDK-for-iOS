@@ -424,8 +424,8 @@
 		2782DABF1625A7B700C3C67A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Siqi Hao (L5FK5QZW53)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Siqi Hao (L5FK5QZW53)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWMApp/MWMApp-Prefix.pch";
 				INFOPLIST_FILE = "MWMApp/MWMApp1-Info.plist";
@@ -434,8 +434,8 @@
 					"$(SRCROOT)/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D1AAB472-68E7-4377-B513-AED62E2BBA2D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0902586D-7F8A-4FFA-9D2A-34AFA94AFE68";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -443,7 +443,7 @@
 		2782DAC01625A7B700C3C67A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Siqi Hao (L5FK5QZW53)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWMApp/MWMApp-Prefix.pch";
 				INFOPLIST_FILE = "MWMApp/MWMApp1-Info.plist";
@@ -452,7 +452,7 @@
 					"$(SRCROOT)/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D1AAB472-68E7-4377-B513-AED62E2BBA2D";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
