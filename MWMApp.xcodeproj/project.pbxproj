@@ -424,7 +424,26 @@
 		2782DABF1625A7B700C3C67A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Siqi Hao (L5FK5QZW53)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Siqi Hao (L5FK5QZW53)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MWMApp/MWMApp-Prefix.pch";
+				INFOPLIST_FILE = "MWMApp/MWMApp1-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6B94D638-91A2-4996-894E-C84114DBEB57";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B94D638-91A2-4996-894E-C84114DBEB57";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2782DAC01625A7B700C3C67A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Siqi Hao (L5FK5QZW53)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWMApp/MWMApp-Prefix.pch";
@@ -434,25 +453,8 @@
 					"$(SRCROOT)/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		2782DAC01625A7B700C3C67A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MWMApp/MWMApp-Prefix.pch";
-				INFOPLIST_FILE = "MWMApp/MWMApp1-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/**",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6B94D638-91A2-4996-894E-C84114DBEB57";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B94D638-91A2-4996-894E-C84114DBEB57";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
