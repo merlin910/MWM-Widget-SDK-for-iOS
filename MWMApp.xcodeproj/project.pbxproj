@@ -22,6 +22,8 @@
 		274564EB167A05FE00424A9D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27ADACB116396E7900D25279 /* MainViewController.xib */; };
 		274564EC167A05FE00424A9D /* mwmapp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 279BDD65165A56A000DFBFEB /* mwmapp1.png */; };
 		274564ED167A05FE00424A9D /* bg_a.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 270D713C166D0CF800D87B2F /* bg_a.bmp */; };
+		275F9B471758A9BB002052B2 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F9B461758A9BA002052B2 /* libMWMAppManager.a */; };
+		275F9B481758A9BB002052B2 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F9B461758A9BA002052B2 /* libMWMAppManager.a */; };
 		2782DAA51625A7B700C3C67A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2782DAA41625A7B700C3C67A /* UIKit.framework */; };
 		2782DAA71625A7B700C3C67A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2782DAA61625A7B700C3C67A /* Foundation.framework */; };
 		2782DAA91625A7B700C3C67A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2782DAA81625A7B700C3C67A /* CoreGraphics.framework */; };
@@ -35,8 +37,6 @@
 		279BDD66165A56A000DFBFEB /* mwmapp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 279BDD65165A56A000DFBFEB /* mwmapp1.png */; };
 		27ADACB216396E7900D25279 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ADACB016396E7900D25279 /* MainViewController.m */; };
 		27ADACB316396E7900D25279 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27ADACB116396E7900D25279 /* MainViewController.xib */; };
-		27B822501685E2B8001F7635 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B8224F1685E2B7001F7635 /* libMWMAppManager.a */; };
-		27B822511685E2B8001F7635 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B8224F1685E2B7001F7635 /* libMWMAppManager.a */; };
 		27C74DB916822CBD00D1E085 /* metawatch_8pt_5pxl_CAPS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27C74DB416822CBC00D1E085 /* metawatch_8pt_5pxl_CAPS.ttf */; };
 		27C74DBA16822CBD00D1E085 /* metawatch_8pt_5pxl_CAPS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27C74DB416822CBC00D1E085 /* metawatch_8pt_5pxl_CAPS.ttf */; };
 		27C74DBB16822CBD00D1E085 /* metawatch_8pt_5pxl_Numerals.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27C74DB516822CBC00D1E085 /* metawatch_8pt_5pxl_Numerals.ttf */; };
@@ -55,6 +55,7 @@
 		27357AE016B280E000EE63A9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = ../README; sourceTree = "<group>"; };
 		274564F1167A05FE00424A9D /* MWMApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWMApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274564F3167A05FE00424A9D /* MWMApp2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MWMApp2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		275F9B461758A9BA002052B2 /* libMWMAppManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMAppManager.a; sourceTree = SOURCE_ROOT; };
 		2782DAA01625A7B700C3C67A /* MWMApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWMApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2782DAA41625A7B700C3C67A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2782DAA61625A7B700C3C67A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,7 +75,6 @@
 		27ADACAF16396E7900D25279 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		27ADACB016396E7900D25279 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		27ADACB116396E7900D25279 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		27B8224F1685E2B7001F7635 /* libMWMAppManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMWMAppManager.a; path = MWMApp/libMWMAppManager.a; sourceTree = SOURCE_ROOT; };
 		27C74DB416822CBC00D1E085 /* metawatch_8pt_5pxl_CAPS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = metawatch_8pt_5pxl_CAPS.ttf; sourceTree = "<group>"; };
 		27C74DB516822CBC00D1E085 /* metawatch_8pt_5pxl_Numerals.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = metawatch_8pt_5pxl_Numerals.ttf; sourceTree = "<group>"; };
 		27C74DB616822CBC00D1E085 /* metawatch_8pt_6pxl_Numerals.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = metawatch_8pt_6pxl_Numerals.ttf; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				274564E3167A05FE00424A9D /* UIKit.framework in Frameworks */,
 				274564E4167A05FE00424A9D /* Foundation.framework in Frameworks */,
 				274564E5167A05FE00424A9D /* CoreGraphics.framework in Frameworks */,
-				27B822511685E2B8001F7635 /* libMWMAppManager.a in Frameworks */,
+				275F9B481758A9BB002052B2 /* libMWMAppManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 				2782DAA51625A7B700C3C67A /* UIKit.framework in Frameworks */,
 				2782DAA71625A7B700C3C67A /* Foundation.framework in Frameworks */,
 				2782DAA91625A7B700C3C67A /* CoreGraphics.framework in Frameworks */,
-				27B822501685E2B8001F7635 /* libMWMAppManager.a in Frameworks */,
+				275F9B471758A9BB002052B2 /* libMWMAppManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 				2782DAB31625A7B700C3C67A /* AppDelegate.h */,
 				2782DAB41625A7B700C3C67A /* AppDelegate.m */,
 				27ADAC9916395D9800D25279 /* MWMAppManager.h */,
-				27B8224F1685E2B7001F7635 /* libMWMAppManager.a */,
+				275F9B461758A9BA002052B2 /* libMWMAppManager.a */,
 				27ADACAF16396E7900D25279 /* MainViewController.h */,
 				27ADACB016396E7900D25279 /* MainViewController.m */,
 				27ADACB116396E7900D25279 /* MainViewController.xib */,
@@ -344,6 +344,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = MWMApp2;
 				PROVISIONING_PROFILE = "4584111F-9CE4-4BE4-AC31-3A24C90D9198";
@@ -364,6 +365,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = MWMApp2;
 				PROVISIONING_PROFILE = "4584111F-9CE4-4BE4-AC31-3A24C90D9198";
@@ -432,6 +434,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6B94D638-91A2-4996-894E-C84114DBEB57";
@@ -451,6 +454,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6B94D638-91A2-4996-894E-C84114DBEB57";

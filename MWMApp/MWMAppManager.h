@@ -122,7 +122,7 @@
  *  @method widgetDataSource:receiveHeartBeat:
  *  @param syncID Not in use
  *
- *  @discussion This methods will be invoked per minute. MWMApp can do peridical update here. Of course if your app can wake up more frequent than this interval, you are also free to send updates to MetaWatch.
+ *  @discussion This methods will be invoked per minute. MWMApp can do periodical update here. Of course if your app can wake up more frequent than this interval, you are also free to send updates to MetaWatch. Do NOT implement this method if you do not need MetaWatch to wake your application up.
  *
  */
 - (void) widgetDataSource:(NSUInteger)syncID receiveHeartBeat:(NSTimeInterval)timeStamp;
