@@ -247,7 +247,7 @@ static NSString *kWidgetTypeID = @"w_20000001";
     // widget name
     [widgetDataDict setObject:@"ChromeWidget" forKey:@"widgetName"];
     
-    // Has to be 76*76 PNG!
+    // Must be 76*76 PNG!
     [widgetDataDict setObject:UIImagePNGRepresentation([UIImage imageNamed:@"mwmapp2"]) forKey:@"widgetIcon"];
     
     // If you only supports one instance per widget type, put YES here. Singleton widget is more stable and easy to implement.
@@ -290,7 +290,7 @@ static NSString *kWidgetTypeID = @"w_20000001";
     // widget name
     [widgetDataDict setObject:@"ChromeWidget" forKey:@"widgetName"];
     
-    // Has to be 76*76 PNG!
+    // Must be 76*76 PNG!
     [widgetDataDict setObject:UIImagePNGRepresentation([UIImage imageNamed:@"mwmapp2"]) forKey:@"widgetIcon"];
     
     // If you only supports one instance per widget type, put YES here. Singleton widget is more stable and easy to implement.
