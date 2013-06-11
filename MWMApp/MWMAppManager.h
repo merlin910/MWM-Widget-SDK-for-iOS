@@ -116,6 +116,10 @@
  */
 - (void) mwmAppMgrDeallocedSyncID:(NSUInteger)syncID;
 
+- (void) MWMAppModeReady;
+- (void) MWMAppModeInitFailed:(NSInteger)errCode;
+- (void) MWMAppModeReleasedForced:(BOOL)forced;
+
 @optional
 
 /*!
@@ -127,6 +131,9 @@
  */
 - (void) widgetDataSource:(NSUInteger)syncID receiveHeartBeat:(NSTimeInterval)timeStamp;
 
+- (void) MWMBtn:(unsigned char)btnIndex atMode:(unsigned char)mode pressedForType:(unsigned char)type withMsg:(unsigned char)msg;
+- (void) MWMWatchModeChangedTo:(unsigned char)mode;
+
 @end
 
 @interface MWMAppManager : NSObject
@@ -134,6 +141,7 @@
 @property (nonatomic, weak) id<MWMAppManagerDelegate> delegate;
 
 @property (nonatomic, readonly) BOOL watchConnected;
+@property (nonatomic, readonly) BOOL appModeEnabled;
 
 /*!
  *  @method countOfBleMsg
@@ -217,6 +225,10 @@
  *
  */
 + (NSData*) bitmapDataForCGImage:(CGImageRef)inImage;
+
+- (void) releaseDeviceFromMWM;
+- (void) gainAppModeFromMWM;
+- (void) writeImage:(NSData*)imgData forMode:(unsigned char)mode inRect:(CGRect)rect linesPerMessage:(unsigned char)lpm shouldLoadTemplate:(BOOL)loadTemplate shouldUpdate:(BOOL)update useDifferentialUpdate:(BOOL)differentialUpdate buzzWhenDone:(BOOL)buzz buzzRepeats:(unsigned char)repeats;
 
 @end
 

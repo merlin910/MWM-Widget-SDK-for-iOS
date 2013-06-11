@@ -26,6 +26,7 @@
 - (IBAction) registerExampleWidget:(id)sender;
 - (IBAction) updateExampleWidget:(id)sender;
 - (IBAction) unregisterExampleWidget;
+- (IBAction) appModeBtnPressed:(id)sender;
 
 @end
 
@@ -121,6 +122,10 @@ static NSString *kWidgetTypeID = @"w_20000001";
 
 #pragma mark - MWMAppManagerDelegate
 
+- (void) MWMAppModeReleasedForced:(BOOL)forced {
+    ALog(@"MWMAppModeReleasedForced");
+}
+
 - (void) mwmAppMgrRemovedSyncID:(NSUInteger)syncID {
     [widgetData removeObjectForKey:[NSString stringWithFormat:@"%d", syncID]];
     //ALog(@"%@", [widgetData description]);
@@ -212,6 +217,15 @@ static NSString *kWidgetTypeID = @"w_20000001";
     return @[kWidgetTypeID];
 }
 
+- (IBAction) appModeBtnPressed:(id)sender {
+    if ([[MWMAppManager sharedAppManager] appModeEnabled]) {
+        [[MWMAppManager sharedAppManager] releaseDeviceFromMWM];
+    } else {
+        [[MWMAppManager sharedAppManager] gainAppModeFromMWM];
+    }
+
+}
+
 #pragma mark - IBActions
 
 - (IBAction) enableMMBtnPressed:(id)sender {
@@ -237,6 +251,8 @@ static NSString *kWidgetTypeID = @"w_20000001";
     // Put your widget type ID here.
     [widgetDataDict setObject:kWidgetTypeID forKey:@"widgetID"];
     
+    [widgetDataDict setObject:[NSNumber numberWithBool:YES] forKey:@"allowAppMode"];
+    
     #ifdef mwmapp2
     // a: one square widget
     // b: horizental widget
@@ -252,6 +268,8 @@ static NSString *kWidgetTypeID = @"w_20000001";
     
     // If you only supports one instance per widget type, put YES here. Singleton widget is more stable and easy to implement.
     [widgetDataDict setObject:[NSNumber numberWithBool:NO] forKey:@"singleton"];
+    
+    [widgetDataDict setObject:[NSNumber numberWithBool:YES] forKey:@"allowAppMode"];
     
     #else
     [widgetDataDict setObject:@[@"a", @"b"] forKey:@"supportedLayouts"];
@@ -276,6 +294,8 @@ static NSString *kWidgetTypeID = @"w_20000001";
     NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     [widgetDataDict setObject:appName forKey:@"widgetAppName"];
     [widgetDataDict setObject:[[NSBundle mainBundle] bundleIdentifier] forKey:@"widgetAppID"];
+    
+    [widgetDataDict setObject:[NSNumber numberWithBool:NO] forKey:@"allowAppMode"];
     
     // Put your widget type ID here.
     [widgetDataDict setObject:kWidgetTypeID forKey:@"widgetID"];

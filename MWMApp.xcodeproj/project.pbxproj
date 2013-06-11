@@ -22,8 +22,6 @@
 		274564EB167A05FE00424A9D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27ADACB116396E7900D25279 /* MainViewController.xib */; };
 		274564EC167A05FE00424A9D /* mwmapp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 279BDD65165A56A000DFBFEB /* mwmapp1.png */; };
 		274564ED167A05FE00424A9D /* bg_a.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 270D713C166D0CF800D87B2F /* bg_a.bmp */; };
-		275F9B471758A9BB002052B2 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F9B461758A9BA002052B2 /* libMWMAppManager.a */; };
-		275F9B481758A9BB002052B2 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F9B461758A9BA002052B2 /* libMWMAppManager.a */; };
 		2782DAA51625A7B700C3C67A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2782DAA41625A7B700C3C67A /* UIKit.framework */; };
 		2782DAA71625A7B700C3C67A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2782DAA61625A7B700C3C67A /* Foundation.framework */; };
 		2782DAA91625A7B700C3C67A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2782DAA81625A7B700C3C67A /* CoreGraphics.framework */; };
@@ -47,6 +45,8 @@
 		27C74DC016822CBD00D1E085 /* metawatch_8pt_7pxl_CAPS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27C74DB716822CBC00D1E085 /* metawatch_8pt_7pxl_CAPS.ttf */; };
 		27C74DC116822CBD00D1E085 /* metawatch_16pt_11pxl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27C74DB816822CBD00D1E085 /* metawatch_16pt_11pxl.ttf */; };
 		27C74DC216822CBD00D1E085 /* metawatch_16pt_11pxl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27C74DB816822CBD00D1E085 /* metawatch_16pt_11pxl.ttf */; };
+		27E3C69C175E221100206622 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F9B461758A9BA002052B2 /* libMWMAppManager.a */; };
+		27E3C69D175E221800206622 /* libMWMAppManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F9B461758A9BA002052B2 /* libMWMAppManager.a */; };
 		27EC94361639AF190050E36A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EC94351639AF190050E36A /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,8 +91,8 @@
 				274564E2167A05FE00424A9D /* CoreBluetooth.framework in Frameworks */,
 				274564E3167A05FE00424A9D /* UIKit.framework in Frameworks */,
 				274564E4167A05FE00424A9D /* Foundation.framework in Frameworks */,
+				27E3C69D175E221800206622 /* libMWMAppManager.a in Frameworks */,
 				274564E5167A05FE00424A9D /* CoreGraphics.framework in Frameworks */,
-				275F9B481758A9BB002052B2 /* libMWMAppManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 				27EC94361639AF190050E36A /* CoreBluetooth.framework in Frameworks */,
 				2782DAA51625A7B700C3C67A /* UIKit.framework in Frameworks */,
 				2782DAA71625A7B700C3C67A /* Foundation.framework in Frameworks */,
+				27E3C69C175E221100206622 /* libMWMAppManager.a in Frameworks */,
 				2782DAA91625A7B700C3C67A /* CoreGraphics.framework in Frameworks */,
-				275F9B471758A9BB002052B2 /* libMWMAppManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +435,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/**",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/MWMWorkSpace-G2-absigxsjfinbfjafgzxjdhjedixd/Build/Products/Debug-iphoneos\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6B94D638-91A2-4996-894E-C84114DBEB57";
@@ -455,6 +456,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/**",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/MWMWorkSpace-G2-absigxsjfinbfjafgzxjdhjedixd/Build/Products/Debug-iphoneos\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6B94D638-91A2-4996-894E-C84114DBEB57";
